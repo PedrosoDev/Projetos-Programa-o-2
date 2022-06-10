@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cadastro de Aluno</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script defer async src="main.js"></script>
+    <script defer async src="masks.js"></script>
+  </head>
+  <body>
+    <header>
+      <span>SIGAA do rio pequeno do sul</span>
+    </header>
+    <main>
+      <div class="action-bar">
+        <input type="text" />
+        <button class="bt-search">Procurar</button>
+        <button class="bt-add">Adicionar</button>
+      </div>
+
+      <div class="container-data">
+        <template class="aluno">
+          <div class="modal">
+            <button class="bt-close">X</button>
+            <h1>Cadastar Pessoa</h1>
+            <form>
+              <div class="input-container">
+                <label for="nome">Nome</label>
+                <input name="nome" id="nome" type="text" />
+              </div>
+              <div class="input-container">
+                <label for="dataNasc">Data de Nascimento</label>
+                <input
+                  data-mascara="calendario"
+                  name="dataNasc"
+                  id="dataNasc"
+                  type="text"
+                />
+              </div>
+              <div class="input-container">
+                <label for="matricula">Matricula</label>
+                <input
+                  data-mascara="matricula"
+                  name="matricula"
+                  id="matricula"
+                  type="text"
+                />
+              </div>
+            </form>
+            <div class="action">
+              <button class="bt-save">Salvar</button>
+            </div>
+          </div>
+        </template>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

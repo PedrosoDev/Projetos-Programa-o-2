@@ -1,0 +1,359 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgb(30, 30, 30, 0.3);
+
+  overflow: hidden;
+}
+
+#menu {
+  width: 250px;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  border-radius: 25px;
+
+  background: #535353;
+
+  color: white;
+}
+#menu > * {
+  margin: 0;
+  padding: 0;
+}
+
+#menu > h3 {
+  font-size: 40px;
+}
+
+#menu > p {
+  font-size: 24px;
+}
+
+#menu > button {
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+#counter {
+  z-index: 100;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#counter > h1 {
+  z-index: 100;
+
+  font-size: 100px;
+  color: white;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+#robo {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#genius > div {
+  cursor: pointer;
+}
+
+.cabeca {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(128, 128, 128, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bone {
+  position: absolute;
+  flex-shrink: 0;
+  height: 50px;
+  width: 120px;
+  border-radius: 100px 100px 0 0;
+  background-color: green;
+
+  transform: translateY(-130%);
+
+  display: flex;
+  justify-content: center;
+
+  background: red;
+}
+.bone::after {
+  display: block;
+  content: "";
+  flex-shrink: 0;
+  width: 120px;
+  height: 100px;
+  border: solid 10px;
+  border-color: rgb(151, 0, 0) transparent transparent;
+  border-radius: 50%/10px;
+  transform: translateY(37%);
+}
+.rosto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-15%);
+}
+.antena::before {
+  display: block;
+  content: "";
+  flex-shrink: 0;
+  width: 20px;
+  height: 30px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background: red;
+}
+.antena {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 20px;
+  height: 40px;
+  background: #ff0;
+  transform: translateY(-50%);
+}
+.antena::after {
+  display: block;
+  content: "";
+  flex-shrink: 0;
+  width: 30px;
+  height: 25px;
+  border-radius: 20%;
+  background: grey;
+}
+.antena-container {
+  transform: translateY(-50%);
+}
+.sobrancelha {
+  width: 40px;
+  height: 0px;
+  border-radius: 25px;
+  background: grey;
+}
+.sobrancelha:nth-child(1) {
+  transform: rotate(-20deg);
+}
+.sobrancelha:nth-child(2) {
+  transform: rotate(20deg);
+}
+.sobrancelha-container {
+  width: 90%;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+}
+.orelha {
+  width: 25px;
+  height: 30px;
+  border-radius: 20%;
+  background: grey;
+}
+.orelha:nth-child(1) {
+  transform: translate(-50%);
+}
+.orelha:nth-child(3) {
+  transform: translate(50%);
+}
+.orelha-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.olho-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.olho {
+  width: 25px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #87cefa;
+}
+.olho::after {
+  display: block;
+  content: "";
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background: #87cefa;
+}
+.nariz {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: gray;
+}
+.boca {
+  width: 50px;
+  height: 20px;
+  border: solid 5px;
+  border-color: red transparent transparent;
+  border-radius: 50%/10px;
+  transform: rotate(180deg);
+}
+.parafuso {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+}
+.parafuso::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 20%;
+  transform: rotate(60deg);
+  background: #535353;
+}
+.corpo-container {
+  display: flex;
+  flex-direction: row;
+}
+.corpo {
+  width: 140px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.button-container {
+  width: 80%;
+  height: 80%;
+  transform: translateY(15px);
+  background: rgba(128, 128, 128, 0.322);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+.button {
+  width: 30px;
+  height: 20px;
+  border-radius: 5px;
+  background: currentColor;
+}
+.cinto {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00f;
+  transform: translateY(100%);
+}
+.manga {
+  width: 30px;
+  height: 50px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+}
+.braco:nth-child(1) > .manga {
+  transform: rotate(-50deg) translate(70%, -25%);
+}
+.braco:nth-child(3) > .manga {
+  transform: rotate(50deg) translate(-70%, -25%);
+}
+.braco {
+  width: 30px;
+  height: 70px;
+  background: grey;
+}
+.braco::after {
+  display: block;
+  content: "";
+
+  width: 100px;
+  height: 600px;
+  border: solid 15px;
+  border-color: yellow transparent transparent;
+  border-radius: 50%;
+  transform: translate(-39%, 15px);
+}
+.braco:nth-child(1) {
+  transform: rotate(50deg) translate(-50%, 30%);
+}
+.braco:nth-child(3) {
+  transform: rotate(-50deg) translate(50%, 30%);
+}
+.perna-container {
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.perna {
+  width: 30px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+.perna::before {
+  display: block;
+  content: "";
+  flex-shrink: 0;
+  width: 35px;
+  height: 20px;
+  background: gray;
+  border-radius: 10px;
+  transform: translateY(40px);
+}
+.perna::after {
+  display: block;
+  content: "";
+  flex-shrink: 0;
+  width: 35px;
+  height: 25px;
+  background: #fff;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 50% 50% 0 0;
+  transform: translateY(60px);
+}

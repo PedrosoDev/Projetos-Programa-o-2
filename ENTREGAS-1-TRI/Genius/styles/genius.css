@@ -1,0 +1,29 @@
+@keyframes piscadela {
+  50% {
+    background: radial-gradient(white, currentColor);
+    box-shadow: 0 0 10em currentColor;
+  }
+}
+
+@keyframes counter {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    font-size: 1000px;
+    opacity: 0;
+  }
+}
+
+#genius > div.animate {
+  animation: piscadela 0.7s ease-in-out;
+}
+
+.notVisibility {
+  visibility: hidden;
+}
+
+h1.animate {
+  animation: counter 0.7s ease-in-out;
+}

@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  font-family: "Roboto", sans-serif;
+  color: white;
+
+  --font-size-form: 15px;
+
+  --ascent-color: #e53854;
+  --background-color: #383a55;
+  --background-card-color: #24253c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+header {
+  padding: 16px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background: var(--ascent-color);
+  margin-bottom: 16px;
+
+  font-size: x-large;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  border: 1px solid var(--ascent-color);
+  border-radius: 5px;
+
+  padding: 8px 16px;
+
+  color: white;
+  background-color: transparent;
+}
+
+button {
+  border: none;
+  border-radius: 100px;
+  font-size: large;
+  padding: 8px 16px;
+  color: white;
+  background-color: var(--ascent-color);
+
+  cursor: pointer;
+}
+
+.modal form > div {
+  margin-bottom: 1em;
+}
+
+.modal form > div > label {
+  display: inline-block;
+
+  padding: 0 8px;
+  margin-left: 8px;
+  font-size: var(--font-size-form);
+  transform: translateY(150%);
+  transition: transform 0.3s;
+
+  background-color: var(--background-card-color);
+}
+
+.modal form > div > input {
+  width: 100%;
+  font-size: var(--font-size-form);
+}
+
+.modal div.action {
+  display: flex;
+  justify-content: end;
+  border-top: 1px solid var(--ascent-color);
+  padding-top: 8px;
+}
+
+.modal {
+  position: relative;
+  background-color: var(--background-card-color);
+  border: 2px solid var(--ascent-color);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  padding: 1em;
+  margin: 2em;
+
+  max-width: 350px;
+}
+
+.modal .bt-save {
+  cursor: pointer;
+}
+
+.modal .bt-save:hover {
+  opacity: 0.8;
+}
+
+.modal h1 {
+  display: block;
+  margin: 0 0 8px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--ascent-color);
+}
+
+.modal .bt-close {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  right: 0;
+  top: 0;
+  transform: translate(25%, -25%);
+  border-radius: 50;
+  border: 2px solid;
+  color: var(--ascent-color);
+  background-color: var(--background-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.action-bar button {
+  margin-left: 16px;
+}
